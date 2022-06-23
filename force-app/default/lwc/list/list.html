@@ -1,0 +1,12 @@
+<template>
+    <div class="container">
+        <template for:each={bikes} for:item="bike">
+            <!-- 処理③：②で呼び出し、ontileclickのhandleTileClickを実行する -->
+            <c-tile 
+                key={bike.fields.Id.value} 
+                product={bike} 
+                ontileclick={handleTileClick}>
+            </c-tile>
+        </template>
+    </div>
+</template>
